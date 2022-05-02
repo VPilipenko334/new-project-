@@ -21,12 +21,14 @@ function App() {
     <div className="App">
       <div className="outer-container">
         <h1>How would you like to proceed?</h1>
-        <h2>Answer a series of questions to figure out a little bit more about yourself</h2>
-        <h3>If you were an inanimate object, which one would best describe you?</h3>
-          <select>
-            <option onClick={handleVent}>{vent}</option>
-            <option onClick={handleBlanket}>{blanket}</option>
-          </select>
+          <div className="inner-container">
+            <h2>Answer a series of questions to figure out a little bit more about yourself</h2>
+            <h3>If you were an inanimate object, which one would best describe you?</h3>
+              <select className="dropdown">
+                <option onClick={handleVent}>Vent</option>
+                <option onClick={handleBlanket}>Blanket</option>
+              </select>
+          </div>
       </div>
     </div>
   );
