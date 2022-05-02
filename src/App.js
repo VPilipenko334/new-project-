@@ -1,11 +1,14 @@
-import './stylesheets/App.css';
+import Vent from "./components/vent";
+import Blanket from "./components/blanket";
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      <h1>Hi React is working!</h1>
-      </header>
+      <div>
+        <Blanket/>
+        <Vent/>
+      </div>
     </div>
   );
 }
